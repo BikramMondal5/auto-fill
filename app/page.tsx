@@ -314,7 +314,7 @@ export default function HomePage() {
   <div className="bg-[#23263a] rounded-2xl shadow-2xl overflow-hidden border border-[#23263a] max-w-4xl w-[70vw]">
           <div className="relative w-full h-[500px] flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #2b2e4a 0%, #5f2c82 100%)' }}>
             <img
-              src="https://cdn.dribbble.com/userupload/24405183/file/original-7e974ceca651feb6123f2ac24cf57f42.gif"
+              src="MagicFill-logo (4) (1).jpeg"
               alt="Dashboard Demo"
               className="w-full h-full object-contain rounded-2xl"
               style={{ maxHeight: 650 }}
