@@ -307,7 +307,7 @@ export default function HomePage() {
             src="/dashboard-demo.png"
             alt="Dashboard Demo"
             className="w-full h-auto block"
-            style={{ minHeight: 500, objectFit: 'contain', background: 'linear-gradient(135deg, #2b2e4a 0%, #5f2c82 100%)' }}
+            style={{ minHeight: 650, objectFit: 'contain', background: 'linear-gradient(135deg, #2b2e4a 0%, #5f2c82 100%)' }}
           />
         </div>
       </div>
