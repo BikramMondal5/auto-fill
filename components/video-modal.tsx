@@ -50,7 +50,7 @@ export function VideoModal({ isOpen, onClose, imageUrl, videoUrl, autoPlay }: Da
         <h2 className="text-2xl font-semibold text-white">How It Works</h2>
       </div> */}
       <div
-        className="relative w-[80vw] max-w-[1000px] mx-auto bg-[#10131a] rounded-2xl overflow-hidden border border-[#23263a] shadow-2xl"
+        className="relative w-[60vw] max-w-[800px] mx-auto bg-[#10131a] rounded-2xl overflow-hidden border border-[#23263a] shadow-2xl"
         style={{ boxShadow: "0 8px 40px 0 #0a0c14, 0 1.5px 8px 0 #23263a" }}
       >
         {/* Modal Header */}
