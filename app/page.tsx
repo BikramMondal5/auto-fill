@@ -313,7 +313,7 @@ export default function HomePage() {
       <div className="relative z-10 flex justify-center py-0">
         <div className="bg-[#23263a] rounded-2xl shadow-2xl overflow-hidden border border-[#23263a] max-w-4xl w-[70vw] relative">
           {/* Top-left dots */}
-          <div className="absolute top-3 left-4 flex space-x-2 z-20">
+          <div className="absolute top-1 left-4 flex space-x-2 z-20">
             <div className="w-3 h-3 bg-red-500 rounded-full"></div>
             <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
