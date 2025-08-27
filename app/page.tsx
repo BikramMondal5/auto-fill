@@ -300,53 +300,15 @@ export default function HomePage() {
         </div>
       </main>
 
-      {/* Browser Mockup */}
-      <div className="relative z-10 max-w-4xl px-6 pt-0 my-14 mx-auto pb-0 pr-0 pl-0">
-        <div className="bg-gray-800 rounded-t-lg p-3 border-b border-gray-700">
-          <div className="flex items-center space-x-2">
-            <div className="flex space-x-2">
-              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-            </div>
-            <div className="flex-1 mx-4">
-              <div className="bg-gray-700 rounded px-3 py-1 text-sm text-gray-300 flex items-center">
-                <Chrome className="w-4 h-4 mr-2" />
-                Magic<span style={{ color: '#3591e2' }}>Fill</span>
-                <div className="ml-auto flex space-x-1">
-                  <button className="text-gray-400 hover:text-white">×</button>
-                  <button className="text-gray-400 hover:text-white">+</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="mt-2 flex items-center space-x-2 text-sm text-gray-400">
-            <div className="flex items-center space-x-1">
-              <div className="w-4 h-4 bg-gray-600 rounded"></div>
-              <div className="w-4 h-4 bg-gray-600 rounded"></div>
-              <div className="w-4 h-4 bg-gray-600 rounded"></div>
-            </div>
-            <div className="bg-gray-700 rounded px-2 py-1 text-xs">https://google.com</div>
-          </div>
-        </div>
-
-        <div className="bg-gradient-to-br from-blue-900 to-purple-900 rounded-b-lg p-6 min-h-[200px] relative mx-0">
-          <div className="absolute inset-6 flex items-center justify-center">
-            <div
-              className="bg-black/50 backdrop-blur rounded-lg p-6 flex items-center justify-center cursor-pointer hover:bg-black/60 transition-colors group max-w-sm w-96 h-36"
-              onClick={() => setIsVideoModalOpen(true)}
-            >
-              <div className="flex items-center space-x-4">
-                <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center group-hover:bg-blue-700 transition-colors">
-                  <Play className="w-8 h-8 text-white ml-1" />
-                </div>
-                <div className="text-white">
-                  <div className="text-lg font-medium">Watch Demo</div>
-                  <div className="text-sm text-gray-300">See how MagicFill works</div>
-                </div>
-              </div>
-            </div>
-          </div>
+      {/* Dashboard Modal Replacement */}
+      <div className="relative z-10 flex justify-center my-14">
+        <div className="bg-[#23263a] rounded-2xl shadow-2xl overflow-hidden border border-[#23263a] max-w-6xl w-[90vw]">
+          <img
+            src="/dashboard-demo.png"
+            alt="Dashboard Demo"
+            className="w-full h-auto block"
+            style={{ minHeight: 500, objectFit: 'contain', background: 'linear-gradient(135deg, #2b2e4a 0%, #5f2c82 100%)' }}
+          />
         </div>
       </div>
 
