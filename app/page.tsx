@@ -236,7 +236,7 @@ export default function HomePage() {
       </header>
 
       {/* Main Content */}
-      <main className="relative z-10 flex flex-col items-center justify-center min-h-[80vh] px-6 text-center">
+      <main className="relative z-10 flex flex-col items-center justify-center min-h-[80vh] px-6 text-center py-10">
         <div className="max-w-5xl mx-auto space-y-8">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight text-balance">
             <span style={{
@@ -309,7 +309,7 @@ export default function HomePage() {
       <section className="relative z-10 py-10 px-6">
         <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#3591e2' }}>How It Works</h2>
       </section>
-      <div className="relative z-10 flex justify-center my-14">
+      <div className="relative z-10 flex justify-center py-10">
   <div className="bg-[#23263a] rounded-2xl shadow-2xl overflow-hidden border border-[#23263a] max-w-4xl w-[70vw]">
           <div className="relative w-full h-[500px] flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #2b2e4a 0%, #5f2c82 100%)' }}>
             <img
@@ -332,7 +332,7 @@ export default function HomePage() {
       </div>
 
       {/* Key Features section with feature cards */}
-      <section className="relative z-10 py-20 px-6">
+      <section className="relative z-10 py-10 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16" style={{ color: '#3591e2' }}>Key Features</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -390,7 +390,7 @@ export default function HomePage() {
       </section>
 
       {/* FAQ section */}
-      <section className="relative z-10 py-20 px-6">
+      <section className="relative z-10 py-10 px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#3591e2' }}>Frequently Asked Questions</h2>
           <div className="space-y-4">
@@ -422,7 +422,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="relative z-10 py-20 px-6">
+      <section className="relative z-10 py-10 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-r from-purple-900 via-purple-800 to-purple-900 rounded-3xl p-12 text-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-radial from-white/10 via-transparent to-transparent opacity-50"></div>
@@ -471,7 +471,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 bg-black border-t border-gray-800 py-12 px-6">
+      <footer className="relative z-10 bg-black border-t border-gray-800 py-10 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
