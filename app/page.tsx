@@ -306,10 +306,10 @@ export default function HomePage() {
       </main>
 
       {/* Dashboard Modal Replacement */}
-      <section className="relative z-10 py-10 px-6">
+      <section className="relative z-10 px-6 py-0">
         <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#3591e2' }}>How It Works</h2>
       </section>
-      <div className="relative z-10 flex justify-center py-10">
+      <div className="relative z-10 flex justify-center py-0">
   <div className="bg-[#23263a] rounded-2xl shadow-2xl overflow-hidden border border-[#23263a] max-w-4xl w-[70vw]">
           <div className="relative w-full h-[500px] flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #2b2e4a 0%, #5f2c82 100%)' }}>
             <img
