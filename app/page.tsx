@@ -403,25 +403,53 @@ export default function HomePage() {
           <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#3591e2' }}>Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
-              "What is MagicFill?",
-              "What types of websites can I scrape using MagicFill?",
-              "Is MagicFill free to use?",
-              "Do I need coding skills to use MagicFill?",
-              "How do I change the data fields I'm extracting?",
-              "What file formats does MagicFill support?",
-              "Does MagicFill save my past scraping sessions?",
-            ].map((question, index) => (
+              {
+                question: "What is MagicFill?",
+                answer:
+                  "MagicFill is an AI-powered autofill assistant that securely stores your details once and automatically fills government or online forms for you, saving time and reducing errors.",
+              },
+              {
+                question: "How does MagicFill work?",
+                answer:
+                  "Users register and upload their details/documents once. MagicFill stores them securely in a database and uses AI + automation to pre-fill forms whenever you click the “MagicFill” button on supported websites.",
+              },
+              {
+                question: "Is my personal data safe?",
+                answer:
+                  "Yes. All data is stored in secure databases (like Supabase/Pinecone), and only you can access it with proper authentication. We follow strong encryption and data protection standards.",
+              },
+              {
+                question: "Can I edit the details before submitting the form?",
+                answer:
+                  "Absolutely! MagicFill pre-fills the form, but you can review and update any field before final submission.",
+              },
+              {
+                question: "Do I need to upload documents every time?",
+                answer:
+                  "No. Once uploaded, your details are securely stored and can be reused across multiple forms without re-uploading.",
+              },
+              {
+                question: "Which forms and portals does MagicFill support?",
+                answer:
+                  "Currently, MagicFill is built to support government forms (like Aadhaar, PAN, caste certificate, etc.) and can be extended to other portals. Future updates will expand support to more services.",
+              },
+              {
+                question: "Is MagicFill free to use?",
+                answer:
+                  "Yes, our prototype is free for early users. Premium plans may be introduced later for advanced features like bulk document handling, smart search, and enterprise usage.",
+              },
+            ].map((faq, index) => (
               <div key={index} className="border-b border-gray-800">
                 <button
                   className="w-full flex items-center justify-between py-4 text-left hover:text-gray-300 transition-colors"
                   onClick={() => setOpenFaq(openFaq === index ? null : index)}
                 >
-                  <span className="text-lg">{question}</span>
+                  <span className="text-lg">{faq.question}</span>
                   <ChevronDown className={`w-5 h-5 transition-transform ${openFaq === index ? "rotate-180" : ""}`} />
                 </button>
                 {openFaq === index && (
                   <div className="pb-4 text-gray-300">
-                    <p>This is where the answer would go for "{question}"</p>
+                    <p>{faq.answer}</p>
                   </div>
                 )}
               </div>
