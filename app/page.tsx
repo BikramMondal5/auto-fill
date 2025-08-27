@@ -189,7 +189,17 @@ export default function HomePage() {
             <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
               <span className="text-black font-bold text-sm">{"M"}</span>
             </div>
-            <span className="text-xl font-semibold">MagicFill</span>
+            <span className="text-xl font-semibold">
+              <span style={{
+                background: 'linear-gradient(90deg, #b6aaff 0%, #e6cfff 100%)',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                color: 'transparent',
+                display: 'inline-block'
+              }}>Magic</span>
+              <span style={{ color: '#3591e2' }}>Fill</span>
+            </span>
           </div>
           <nav className="hidden md:flex items-center space-x-8">
             <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -224,7 +234,14 @@ export default function HomePage() {
       <main className="relative z-10 flex flex-col items-center justify-center min-h-[80vh] px-6 text-center">
         <div className="max-w-5xl mx-auto space-y-8">
           <h1 className="text-5xl md:text-7xl font-bold leading-tight text-balance">
-            MagicFill – “Your Forms, Filled by Magic”
+            <span style={{
+              background: 'linear-gradient(90deg, #b6aaff 0%, #e6cfff 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              color: 'transparent',
+              display: 'inline-block'
+            }}>Magic</span><span style={{ color: '#3591e2' }}>Fill</span> – “Your Forms, Filled by Magic”
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto text-balance">
@@ -295,7 +312,7 @@ export default function HomePage() {
             <div className="flex-1 mx-4">
               <div className="bg-gray-700 rounded px-3 py-1 text-sm text-gray-300 flex items-center">
                 <Chrome className="w-4 h-4 mr-2" />
-                MagicFill
+                Magic<span style={{ color: '#3591e2' }}>Fill</span>
                 <div className="ml-auto flex space-x-1">
                   <button className="text-gray-400 hover:text-white">×</button>
                   <button className="text-gray-400 hover:text-white">+</button>
@@ -481,7 +498,16 @@ export default function HomePage() {
                 <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
                   <span className="text-black font-bold text-sm">C</span>
                 </div>
-                <span className="text-xl font-semibold">MagicFill </span>
+                <span className="text-xl font-semibold">
+                  <span style={{
+                    background: 'linear-gradient(90deg, #b6aaff 0%, #e6cfff 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                    color: 'transparent',
+                    display: 'inline-block'
+                  }}>Magic</span><span style={{ color: '#3591e2' }}>Fill</span>
+                </span>
               </div>
               <p className="text-gray-400 text-sm mb-4">
                 © Lumoris Technologies Inc.

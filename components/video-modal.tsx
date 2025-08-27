@@ -17,7 +17,7 @@ export function VideoModal({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm">
-      <div className="relative w-full max-w-4xl mx-4 bg-black rounded-lg overflow-hidden">
+  <div className="relative w-[90vw] max-w-[90vw] mx-auto bg-black rounded-2xl overflow-hidden">
         <div className="flex items-center justify-between p-4 border-b border-gray-800">
           <h3 className="text-lg font-semibold text-white">MagicFill Demo</h3>
           <Button
@@ -29,7 +29,7 @@ export function VideoModal({
             <X className="w-5 h-5" />
           </Button>
         </div>
-        <div className="aspect-video">
+  <div className="aspect-[16/7]">
           <iframe
             src={videoUrl}
             title="MagicFill Demo Video"
