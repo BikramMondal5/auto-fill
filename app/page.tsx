@@ -26,6 +26,7 @@ export default function HomePage() {
   // Place this just before the modal section in the JSX return
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [autoPlayVideo, setAutoPlayVideo] = useState(false);
 
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
@@ -321,6 +322,7 @@ export default function HomePage() {
             <button
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-0 shadow-lg flex items-center justify-center transition border-none bg-transparent"
               style={{ zIndex: 2 }}
+              onClick={() => { setIsVideoModalOpen(true); setAutoPlayVideo(true); }}
             >
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" width="64" height="64">
                 <circle cx="24" cy="24" r="24" fill="#3591e2" fillOpacity="0.9" />
@@ -539,8 +541,9 @@ export default function HomePage() {
       {/* Video Modal Component */}
       <VideoModal
         isOpen={isVideoModalOpen}
-        onClose={() => setIsVideoModalOpen(false)}
+        onClose={() => { setIsVideoModalOpen(false); setAutoPlayVideo(false); }}
         videoUrl="https://youtu.be/4ybHfG3jo4w"
+        autoPlay={autoPlayVideo}
       />
     </div>
   )
