@@ -1,9 +1,10 @@
-"use client"
+"use client";
+import { useState } from "react";
+// ...existing imports...
 
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge"
-import { VideoModal } from "@/components/video-modal"
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
+import { VideoModal } from "@/components/video-modal";
 import {
   Chrome,
   Globe,
@@ -19,6 +20,10 @@ import {
 import { FaLinkedin } from "react-icons/fa"
 
 export default function HomePage() {
+  // ...existing code...
+
+  // How It Works Section Title
+  // Place this just before the modal section in the JSX return
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false)
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
@@ -301,14 +306,28 @@ export default function HomePage() {
       </main>
 
       {/* Dashboard Modal Replacement */}
+      <section className="relative z-10 py-10 px-6">
+        <h2 className="text-4xl font-bold text-center mb-12" style={{ color: '#3591e2' }}>How It Works</h2>
+      </section>
       <div className="relative z-10 flex justify-center my-14">
-        <div className="bg-[#23263a] rounded-2xl shadow-2xl overflow-hidden border border-[#23263a] max-w-6xl w-[90vw]">
-          <img
-            src="/dashboard-demo.png"
-            alt="Dashboard Demo"
-            className="w-full h-auto block"
-            style={{ minHeight: 650, objectFit: 'contain', background: 'linear-gradient(135deg, #2b2e4a 0%, #5f2c82 100%)' }}
-          />
+  <div className="bg-[#23263a] rounded-2xl shadow-2xl overflow-hidden border border-[#23263a] max-w-4xl w-[70vw]">
+          <div className="relative w-full h-[500px] flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #2b2e4a 0%, #5f2c82 100%)' }}>
+            <img
+              src="/dashboard-demo.png"
+              alt="Dashboard Demo"
+              className="w-full h-full object-contain rounded-2xl"
+              style={{ maxHeight: 650 }}
+            />
+            <button
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full p-0 shadow-lg flex items-center justify-center transition border-none bg-transparent"
+              style={{ zIndex: 2 }}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" width="64" height="64">
+                <circle cx="24" cy="24" r="24" fill="#3591e2" fillOpacity="0.9" />
+                <polygon points="20,16 36,24 20,32" fill="#fff" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -518,7 +537,11 @@ export default function HomePage() {
       </footer>
 
       {/* Video Modal Component */}
-      <VideoModal isOpen={isVideoModalOpen} onClose={() => setIsVideoModalOpen(false)} />
+      <VideoModal
+        isOpen={isVideoModalOpen}
+        onClose={() => setIsVideoModalOpen(false)}
+        videoUrl="https://youtu.be/4ybHfG3jo4w"
+      />
     </div>
   )
 }
